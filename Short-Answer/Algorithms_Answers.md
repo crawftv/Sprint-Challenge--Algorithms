@@ -12,15 +12,15 @@ c)I think this is in n time.
 
 ## Exercise II
 
-I believe this is the classic binary search problem. 
-    STORE_TESTED_FLOORS = LIST
-    f = n/2
-    drop at f 
-        if f in STORE:
-        return store
-        elif it successful
-            drop at f = (3/2)*(f)
-        elif it is unsucessful:
-            drop at f = (1/2)*(f)
- I'm pretty sure the run time complexity approaches square_root of n
+I believe this is the classic binary search problem.   
+    STORE_TESTED_FLOORS = LIST  
+    f = n/2  
+    drop at f   
+        if f in STORE:  
+        return store  
+        elif it successful  
+            drop at f = (3/2)*(f)  
+        elif it is unsucessful:  
+            drop at f = (1/2)*(f)  
+ I'm pretty sure the run time complexity approaches square_root of n  
         
