@@ -101,27 +101,27 @@ class SortingRobot:
         def micro_sort(n):
             for i in range(n):
                 self.move_right()
-                print("moving")
-                self.swap_item()
+            self.swap_item()
             while self.can_move_right():
                 self.move_right()
-                print(self._item,"=>",self._list)
+                #print(self._item,"=>",self._list)
                 if self.compare_item() == 1:
                     self.swap_item()
                     self.set_light_off()
                 elif self.compare_item() == -1:
                     pass
             while self.can_move_left():
-                print(self._item,"<=",self._list)
+                #                print(self._item,"<=",self._list)
                 self.move_left()
                 if self.compare_item()==1:
                     self.swap_item()
                     self.set_light_off()
                 elif self.compare_item()==-1:
                     pass
-            self.swap_item()
-        for i in range(0,len(self._list)):
+        for i in range(0,len(self._list)-1):
             micro_sort(i)
+        self.swap_item()
+
 if __name__ == "__main__":
     # Test our your implementation from the command line
     # with `python robot_sort.py`
